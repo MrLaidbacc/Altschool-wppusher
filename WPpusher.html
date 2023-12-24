@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WPPusher</title>
+    <link rel="stylesheet" href="pusher.css">
+</head>
+<body>
+    <header>
+        <nav id="nav-container">
+            <img src="images/wppusher-logo copy.jpg" alt="logo">
+            <ul>
+                <li>Download</li>
+                <li>Learn more</li>
+                <li>Pricing</li>
+                <li>Help</li>
+                <li>Account</li>
+            </ul>
+        </nav>
+        <div class="line">
+            <hr>
+        </div>
+    </header>
+
+    <main id="main-container">
+        <section class="form-section">
+            <form class="form-container" action="#">
+                <h1> Checkout </h1>
+                <hr>
+                <section class="basic-section">
+                    <section class="basic-section-text">
+                        <img src="images/1.png" alt="one">
+                        <h1>Your Basic Information</h1>
+                    </section>
+                    <section class="first-name">
+                        <label for="first-name">First Name</label>
+                        <input id="first-name" type="text" placeholder="Jane" required>
+                    </section>
+                    <section class="last-name">
+                        <label for="last-name">Last Name</label>
+                        <input id="last-name" type="text" placeholder="Doe" required>
+                    </section>
+                    <section class="email">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" placeholder="janedoe@example.com" required>
+                    </section>
+                </section>
+                <hr>
+
+                <section class="payment-section">
+                    <section class="payment-section-text">
+                        <img src="images/2.png" alt="two">
+                        <h1>Your Payment Information</h1>
+                    </section>
+                    <section class="card-details">
+                        <label for="card-details">Credit Card</label>
+                        <div class="card-inputs">
+                            <input id="card-details" type="text" placeholder="Card Number" 
+                            maxlength="19" pattern="\d{4} \d{4} \d{4} \d{4}" required>
+                            <input type="text" placeholder="MM/YY" 
+                            maxlength="5" pattern="\d{2}/\d{2}"  required>
+                            <input type="text" placeholder="CVC" 
+                            maxlength="3" pattern="\d{3}"  required>
+                        </div>
+                    </section>
+                </section>
+                <hr>
+
+                <section class="submit">
+                    <input type="submit" value="Buy WP Pusher" formnovalidate>
+                </section>
+            </form>
+            <section class="main-footer">
+                <section class="question">
+                    <img src="images/Mask.png" alt="question mark">
+                    <p><span>Need any help?</span> Don’t hesitate to contact support!</p>
+                </section>
+                <img src="images/powered_by_stripe.png" alt="powered by stripe logo">
+            </section>
+        </section>
+        
+        <section class="side-bar">
+            <h1>Freelancer</h1>
+            <img src="images/pricing.png" alt="pricing">
+            <p><em>Automatically renews after 1 year</em></p>
+            <section class="checkmarks-container">
+                <div class="checkmark">
+                    <img src="images/checkmark.png" alt="checkmark">
+                    <p>Use on 5 client sites</p>
+                </div>
+                <div class="checkmark">
+                    <img src="images/checkmark.png" alt="checkmark">
+                    <p>Private repositories</p>
+                </div>
+                <div class="checkmark">
+                    <img src="images/checkmark.png" alt="checkmark">
+                    <p>Email support</p>
+                </div>
+            </section>
+            <p>Need <strong>20</strong> client sites?</p>
+            <p class="side-bar-link"><strong>Switch to the Agency plan.</strong></p>
+            <hr class="side-bar-line">
+            <p class="quote">
+                <em>
+                    FTP is horrible to deal with. 
+                    <strong>WP Pusher</strong> solves that issue, and the customer support is awesome!
+                </em>
+            </p>
+            <section class="kirk-beard">
+                <img src="images/bitmap.png" alt="Kirk Beard">
+                <p>Kirk Beard</p>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            © 2018 WP Pusher IVS  ·  <span>Terms of Service</span>
+        </p>
+    </footer>
+</body>
+</html>

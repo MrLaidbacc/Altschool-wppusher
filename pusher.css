@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+
+  body{
+    display: grid;
+    margin: auto 0;
+    font-family: 'Montserrat', sans-serif;
+    padding: 1em 2em;
+}
+
+#nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav-container img{
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+}
+
+#nav-container ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 40px;
+    color: #1D2C3C;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+ ul > li:last-child{
+    border: 1px solid #1D2C3C;
+    border-radius: 4px;
+    padding: 8px 20px;
+}
+
+.line{
+    margin-top: 1em;
+    color: #737373;
+}
+
+#main-container{
+    place-self: center;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.1);
+    margin-top: 4em;
+    margin-bottom: 1em;
+}
+
+.form-section{
+    display: grid;
+    justify-content: center;
+    padding-bottom: 3em;
+}
+
+.form-container hr{
+    max-width: 100%;
+    margin-top: 1.5em;
+    height: 1px;
+    background-color: lightgrey;
+    border: none;
+}
+
+.form-container > h1{
+    font-size: 30px;
+    padding-left: 1em;
+}
+
+.basic-section{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2em;
+    row-gap: 1em;
+}
+
+.basic-section, .payment-section, .submit{
+    padding: 0 2em;
+    padding-bottom: 1em;
+}
+
+.basic-section-text{
+    grid-row: span 1;
+    grid-column: span 4;
+}
+
+.first-name, .last-name{
+    grid-column: span 2;
+}
+
+.first-name input, .last-name input{
+    width: 227px;
+    height: 36px;
+}
+
+.email{
+    grid-row: span 3;
+    grid-column: span 3;
+}
+
+.email input{
+    width: 370px;
+    height: 36px;
+}
+
+.first-name input, .last-name input, .email input, .card-inputs input{
+    padding: 8px 20px;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background-color:#EDEFF2;
+}
+
+.basic-section-text, .payment-section-text{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.basic-section-text img, .payment-section-text img{
+    width: 30px;
+    height: 30px;
+}
+
+.first-name, .last-name, .email, .card-details{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.card-inputs{
+    display: flex;
+}
+
+.card-inputs input{
+    flex: 0 0 auto;
+    border-radius: 1px;
+    height: 36px;
+}
+
+.card-inputs input:first-child{
+    min-width: 300px;
+}
+
+.card-inputs input:nth-child(2), .card-inputs input:nth-child(3){
+    max-width: 100px;
+}
+
+.submit{
+    margin-top: 2em;
+}
+
+.submit input{
+    width: 485px;
+    height: 52px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background-color:#038E7D;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.main-footer{
+    display: grid;
+    place-items: center;
+}
+
+.question{
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.question p{
+    color: #646E7A;
+}
+
+.question span{
+    color: #1D2C3C;
+    font-weight: 700;
+}
+
+.main-footer > img{
+    width: 92px;
+    height: 20px;
+}
+
+.side-bar{
+    padding: 1em 2em;
+    max-width: 312px;
+    background-color: #1179BF;
+    color: white;
+}
+
+.side-bar h1{
+    font-size: 18px;
+}
+
+.side-bar .quote{
+    max-width: 300px;
+}
+
+.checkmarks-container{
+    padding-top: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+}
+
+.checkmark{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkmark p{
+    font-size: 14px;
+}
+
+.side-bar-link{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.side-bar hr{
+    max-width: 230px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    height: 1px;
+    background-color: #F5F7FA;
+    border: none;
+}
+
+.kirk-beard{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.kirk-beard p{
+    font-weight: 700;
+}
+
+footer p{
+    font-size: 14px;
+    text-align: center;
+    color: #636B6F;
+}
+
+footer span{
+    color: #31708F;
+    cursor: pointer;
+}
+
+
+
+
